@@ -1,8 +1,24 @@
-/* Copyright (c) 2020 MTHS All rights reserved
+/* Copyright (c) 2023 MTHS All rights reserved
  *
- * Created by: Mr. Coxall
- * Created on: Sep 2020
- * This program ...
+ * Created by: Julianne Leblanc-Peltier
+ * Created on: Sep 2023
+ * This program is a cookie clicker game
 */
 
-basic.showString('Hello, World!')
+basic.clearScreen()
+basic.showIcon(IconNames.Happy)
+
+let numberOfCookiesClicked: number
+numberOfCookiesClicked = 0
+
+input.onButtonPressed(Button.A, function () {
+  numberOfCookiesClicked = numberOfCookiesClicked + 1
+  basic.showString(numberOfCookiesClicked.toString())
+
+})
+
+input.onButtonPressed(Button.B, function () {
+  numberOfCookiesClicked = 0
+  basic.showString(numberOfCookiesClicked.toString())
+
+} )
