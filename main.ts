@@ -14,11 +14,9 @@ numberOfCookiesClicked = 0
 input.onButtonPressed(Button.A, function () {
   numberOfCookiesClicked = numberOfCookiesClicked + 1
   basic.showString(numberOfCookiesClicked.toString())
-
 })
 
 input.onButtonPressed(Button.B, function () {
   numberOfCookiesClicked = 0
   basic.showString(numberOfCookiesClicked.toString())
-
-} )
+})
